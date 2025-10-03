@@ -1,0 +1,53 @@
+========================================
+Comandos Utilizados en al práctica 2
+
+su -
+
+ip address show
+
+nano /cat/network/interfaces
+
+iface ens33 inet static
+	address 192.168.1.100
+	netmask 255.255.255.0
+	gateway 192.168.1.1
+	dns-google.com 8.8.8.8 8.8.4.4
+
+
+nmtui
+
+
+=======================================
+Codigos Utilizados en la práctica 3
+
+sudo adduser Juancito
+
+cat /etc/passwd
+
+sudo usermod -aG sudo juan
+
+sudo addgroup guest
+
+sudo adduser --ingroup guest invitado
+
+sudo delgroup guest
+
+cat/etc/group
+
+========================================
+Codigos Utilizados en la práctica 4
+
+clear
+
+cd ..
+
+mkdir Estudiante
+
+chmod 700 Daniel.txt
+
+ls Estudiante
+
+exit
+
+rm -r Estudiante
+=========================================
