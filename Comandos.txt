@@ -1,0 +1,43 @@
+Comandos 
+
+===============================================
+Practica 1:
+===============================================
+
+su
+sudo apt update
+sudo apt upgrade
+sudo apt-cache show archivo
+sudo apt install bashtop
+bashtop
+sudo apt remove bashtop
+sudo apt purge bashtop
+
+===============================================
+Practica 2:
+===============================================
+
+crontab -l
+0 11 * * * sudo apt update
+0 3 * * 7 sudo reboot
+date
+at 18:40
+sudo rm -rf /temp/*
+ls /tmp/*
+atq
+
+===============================================
+Practica 3:
+===============================================
+
+fdisk -l
+sudo mkfs.ext4 /dev/
+cd /home/Daniel/Escritorio
+mkdir Disco
+ls
+sudo mount /dev/sdb/ /home/Daniel/Escritorio/Disco
+touch Adrian_Alcantara.txt
+cd ..
+sudo umount /home/Daniel/Escritorio/Disco 
+sudo mount /nmt
+ls /nmt/
