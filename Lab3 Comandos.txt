@@ -1,0 +1,68 @@
+Practica 1
+==================================
+parte1
+
+sudo nano etc/default/grub
+cambiar algo del grub
+sudo update-grub
+reboot
+
+parte2
+
+init=/bin/bash
+guardamos
+passwd root
+poner contrasena
+si da error
+mount -n -o remount,rw
+Volver a poner passwd root
+====================================
+Practica 2
+====================================
+script 1
+mkdir /home/dan/Scripts
+sudo nano script1.sh
+#!/bin/bash
+or= "/home/dan/Escritorio"
+fecha= $(date + "%d-%m-%y:%H:%M")
+des= /home/dan/Backup
+echo "Nombre del archivo: "
+read nom
+nombre = "$nom_$fecha.tar.gz"
+tar -czvf "$des/%nombre" "$origen"
+
+
+script 2
+sudo nano script.sh
+#!bin/bash
+echo "Que nombre desea utilizar?"
+read leer
+sudo ifconfig > "$leer"
+guardar
+chmod 777 script.sh
+./script.sh
+
+===========================================
+Practica 3
+============================================
+ip a
+en la terminal de windows: ping (la ip de la vm)
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl enable ssh
+sudo systemctl start ssh
+sudo systemctl status ssh
+
+abrir la terminal de windows: ssh-keygen
+C:\users\USUARIO/.ssh/id_rsa
+scp C:\users\USUARIO/.ssh/id_rsa (usuariolinux)@(ip de la vm):/home/(usuariolinux)/
+
+en Linux
+mkdir -p ~/.ssh
+cat ~/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+chmod 700 ~/.ssh
+
+abrir la terminal de windows: ssh (usuario linux)@(ip de la vm)
+
+
