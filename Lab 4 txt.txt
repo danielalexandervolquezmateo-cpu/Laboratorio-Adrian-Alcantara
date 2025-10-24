@@ -1,0 +1,33 @@
+===================================
+Práctica 1
+===================================
+
+sudo apt update
+sudo apt install apache2
+sudo cd /var/www/html/
+rm index.html
+nano index.html
+sudo nano /etc/apache2/ports.conf
+	Cambiamos puerto 80 a 8080 y viceversa
+sudo systemctl restart apache2
+
+===================================
+Práctica 2
+===================================
+
+sudo apt install postfix mailutils -y
+nano /etc/postfix/main.cf
+	cambiamos los parámetros de inet_protocols quitamos all y ponemos ipv4
+	cambiamos los parámetros de myhostname del nombre del host a localhost
+sudo systemctl restart postfix
+echo "Daniel Volquez 2025-0820"| mail -s "MambruSeFueALaGuerra" os3conadrian@gmail.com
+mailq
+
+====================================
+Práctica 3
+====================================
+sudo apt install printer-driver-cups-pdf
+nano /etc/cups/cupsd.conf
+	Escribimos Port: 631
+sudo systemctl restart cups
+ls /var/spool/cups-pdf/
